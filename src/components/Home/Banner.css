@@ -1,0 +1,104 @@
+.main-banner {
+  background-image: url(../../assets/img/banner.png);
+  height: 430px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+}
+.main-cont {
+  margin-top: 60px;
+  text-align: center;
+}
+.main-cont img {
+  margin: auto;
+}
+
+.main-cont p {
+  color: white;
+  max-width: 568px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 40px;
+  margin-block: 10px 0;
+  text-align: center;
+}
+
+.search-input {
+  margin-top: 15px;
+  position: relative;
+  max-width: 608px;
+}
+.search-input input::placeholder {
+  color: #8c969b;
+  font-family: "Manrope", sans-serif;
+}
+.search-input input {
+  padding: 15px 90px 15px 42px;
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  gap: 16px;
+  color: #8c969b;
+}
+
+.search-input img {
+  position: absolute;
+  top: 14px;
+  left: 15px;
+}
+.search-btn {
+  background: #2f80ed;
+  border-radius: 8px;
+  padding: 16px;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+
+  font-weight: 600;
+  color: white;
+}
+.suggestions {
+  position: absolute;
+  background: white;
+  padding: 10px;
+  cursor: pointer;
+  top: 42px;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  box-shadow: 0px 9px 19px 0px #00000014;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+.suggestion {
+  font-weight: bold;
+  display: block;
+  margin-block: 5px;
+}
+@media (max-width: 767px) {
+  .main-banner {
+    background-image: url(../../assets/img/mbl-banner.png);
+    height: 430px;
+    border-radius: 12px;
+    padding-inline: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .search-btn {
+    position: static;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .main-cont {
+    margin-top: 27px;
+  }
+}
+@media (max-width: 400px) {
+}

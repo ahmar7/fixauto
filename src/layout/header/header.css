@@ -1,0 +1,130 @@
+.top-banner {
+  background-image: url(../../assets/img/top-banner.png);
+  background-size: 100%;
+  background-position: bottom left;
+  height: 50px;
+}
+.banner-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.plce {
+  color: white;
+  font-weight: 600;
+  margin-block: 0;
+  margin-left: 10px;
+}
+.plce2 {
+  color: white;
+  margin-block: 0;
+  margin-left: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.bn {
+  margin-top: -1px;
+  margin-left: 6px;
+}
+.inner-bar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.lang-drop {
+  border: 1px solid #e1e6ed;
+  cursor: pointer;
+  padding: 12px 10px 12px 10px;
+
+  border-radius: 8px;
+  color: #8c969b;
+
+  font-family: "Onest", sans-serif;
+  /* width: 69px; */
+  /*  */
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+  text-align: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.actvie-drop {
+  padding: 8px 16px 8px 16px;
+  gap: 5px;
+  /* width: 69px; */
+  border-radius: 8px;
+  margin-top: 2px;
+  background-color: white;
+  width: -webkit-fill-available;
+  opacity: 0px;
+  box-shadow: 0px 1px 4px 0px #0000001a;
+}
+.drop-down {
+  position: relative;
+}
+.actvie-drop {
+  position: absolute;
+}
+.selector {
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 16px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 8px 0 8px 0;
+  gap: 5px;
+  opacity: 0px;
+}
+.for-mbl {
+  display: none !important;
+}
+.bar-input.search-input {
+  width: 100%;
+  margin: 0;
+  max-width: none;
+}
+.fix-br {
+  width: 91%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.flexb {
+  display: flex;
+}
+.bar-input input {
+  border: 1px solid #e1e6ed !important;
+  background-color: #f4f5f7;
+}
+@media (max-width: 767px) {
+  .for-desk {
+    display: none !important;
+  }
+  .for-mbl {
+    display: inherit !important;
+  }
+  .fsw {
+    display: flex !important;
+    justify-content: space-between;
+  }
+  .for-service {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .for-service .fix-br {
+    width: max-content;
+  }
+  .for-service .drop-down {
+    width: max-content;
+  }
+}

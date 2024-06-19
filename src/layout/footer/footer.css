@@ -1,0 +1,31 @@
+.footer {
+  background-image: url(../../assets/img/footer.png);
+  background-position: bottom left;
+  background-size: cover;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
+.arrow-up {
+  width: 46px;
+  position: fixed;
+  z-index: 9999;
+  bottom: 100px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  right: 150px;
+  background: #d9d9d9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  border-radius: 8px;
+}
+
+.arrow-up:hover {
+  background-color: #a4a4a4;
+}
