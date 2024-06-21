@@ -22,7 +22,7 @@ const services = [
       {
         title: "Chassis",
         service1: "Diagnostics/check",
-        service2: " Replacement of ball, rods, bushings",
+        service2: "Replacement of ball, rods, bushings",
         service3: "Covering the body with protective film",
         service4: "Camber/toe",
       },
@@ -64,7 +64,6 @@ const services = [
     phone: "+373 68 584 828",
     address: "Chisinau municipality, Muncesti str. 255A",
     views: 1462,
-    alert: "Only serves BMW",
     serviceTypes: [
       {
         title: "Detailing",
@@ -118,7 +117,6 @@ const services = [
     phone: "+373 68 584 828",
     address: "Chisinau municipality, Muncesti str. 255A",
     views: 1462,
-    alert: "Deservește doar BMW",
   },
   {
     id: 2,
@@ -128,7 +126,6 @@ const services = [
     phone: "+373 68 584 828",
     address: "Chisinau municipality, Muncesti str. 255A",
     views: 1462,
-    alert: "Deservește doar BMW",
   },
   // Add more services as needed
 ];

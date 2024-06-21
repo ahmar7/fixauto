@@ -289,7 +289,13 @@ const Body = ({ searchQuery }) => {
             </div>
           </div>
           <div className="ads-ara">
-            <img src={custom_ad} alt="" />
+            {" "}
+            <a
+              href="https://www.figma.com/design/JbujnSnH5oJupnKX8DUcSF/Fixauto.md---for-DEV?node-id=99-1914&t=gsCdoz3CPfCusMiP-0"
+              target="_blank"
+            >
+              <img src={custom_ad} alt="" />
+            </a>
           </div>
           <img className="pga" src={place} alt="" />
           <p className="fixauto">
@@ -299,7 +305,13 @@ const Body = ({ searchQuery }) => {
           </p>
         </div>
         <div className="ads-area">
-          <img src={custom_ad} alt="" />
+          {" "}
+          <a
+            href="https://www.figma.com/design/JbujnSnH5oJupnKX8DUcSF/Fixauto.md---for-DEV?node-id=99-1914&t=gsCdoz3CPfCusMiP-0"
+            target="_blank"
+          >
+            <img src={custom_ad} alt="" />
+          </a>
           <img src={One_Ad} alt="" />
         </div>
       </div>

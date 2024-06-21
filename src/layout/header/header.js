@@ -4,6 +4,7 @@ import logo_fixauto from "../../assets/img/logo-fixauto.png";
 import sparkles from "../../assets/img/sparkles.png";
 import React, { useState } from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 const Header = () => {
   const [isDrop, setisDrop] = useState(false);
   let toggleDrop = () => {
@@ -19,16 +20,20 @@ const Header = () => {
             <span>CTA</span> <span className="bn">→</span>
           </p>
         </div>
-        <div className="max-width for-mbl  fsw banner-data">
+        <a
+          href=""
+          target="_blank"
+          className="max-width for-mbl  fsw banner-data"
+        >
           <p className="plce">Mannol.md - germany quality oil </p>
           <p className="plce2">→</p>
-        </div>
+        </a>
       </div>
       <div className="nav-bar">
         <div className="max-width inner-bar ">
-          <a className="flexb" href="">
+          <Link to="/" className="flexb">
             <img src={logo_fixauto} alt="" />
-          </a>
+          </Link>
           <div className="drop-down">
             <div onClick={toggleDrop} className="lang-drop">
               <img src={language} alt="" />
