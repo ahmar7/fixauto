@@ -49,7 +49,7 @@ const Services = ({ searchQuery }) => {
                 </div>
                 <div className="service-detail">
                   <div className="col-det">
-                    <p>
+                    <p className="headf">
                       {service.name} <img src={verified} alt="" />
                     </p>
                     <p className="comfort">
@@ -76,13 +76,17 @@ const Services = ({ searchQuery }) => {
                       <a href={`tel:${service.phone}`}>{service.phone}</a>
                     </p>
                     <span className="for-mbl divider"></span>
-                    <p className="mail-ph">
+                    <a
+                      href="https://maps.app.goo.gl/JxVVbSEqxVrQ5w5w9"
+                      target="_blank"
+                      className="mail-ph bllo m7"
+                    >
                       <img src={elements} alt="" />
-                      <a href="#">
+                      <span>
                         <span className="for-desk">{service.address}</span>
                         <span className="for-mbl">{service.address}</span>
-                      </a>
-                    </p>
+                      </span>
+                    </a>
                   </div>
                   <div className="counter for-desk">
                     <img src={view} alt="" />

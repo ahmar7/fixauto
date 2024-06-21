@@ -60,6 +60,16 @@
 p.lighter {
   font-weight: 500;
 }
+.lit2 {
+  color: #5b636d;
+}
+.bllo {
+  margin-top: 10px;
+}
+.bllo.m7 {
+  margin-block: 7px !important;
+}
+.bllo,
 .mail-ph a {
   color: #2f80ed;
   text-decoration: none;

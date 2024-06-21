@@ -1,4 +1,4 @@
-import Call from "../../assets/img/call.png";
+import Call from "../../assets/img/call (1).svg";
 import engine_ico from "../../assets/img/engine-ico.png";
 import Btn from "../../assets/img/BTN.svg";
 import paint_ico from "../../assets/img/paint-ico.svg";
@@ -34,6 +34,11 @@ const Body = ({ searchQuery }) => {
   let setShow = () => {
     setisShowMore(!isShowMore);
   };
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleText = () => {
+    setIsExpanded(!isExpanded);
+  };
 
   return (
     <>
@@ -42,20 +47,24 @@ const Body = ({ searchQuery }) => {
       </Link>
       <div className="main-services sm-p ">
         <div className="blocks">
-          <img src={about} alt="" />
+          <img className="rad8" src={about} alt="" />
           <div className="single-service">
             <div className="inner-data">
               <div className="service-detail">
                 <div className="col-det">
-                  <p>
+                  <p className="headf">
                     Amort.md <img src={verified} alt="" />
                   </p>
 
-                  <p className="alert no-border">
+                  <p className="alert  avb no-border">
                     <img src={alert} alt="" />
                     Only serves BMW
                   </p>
-                  <p className="lighter">
+                  <p
+                    className={`lighter lit2 ${
+                      isExpanded ? "expanded" : "collapsed"
+                    }`}
+                  >
                     AutoShock - your professional service partner, specializing
                     in the repair of shock absorbers. We understand that the
                     effective operation of the depreciation system plays a key
@@ -63,8 +72,9 @@ const Body = ({ searchQuery }) => {
                     command team here some text because we need to have three
                     text rows...
                   </p>
-                  <button className="show-more">
-                    Show more <img src={down} alt="" />
+                  <button className="show-more" onClick={toggleText}>
+                    {isExpanded ? "Show less" : "Show more"}{" "}
+                    <img src={down} alt="" />
                   </button>
                 </div>
               </div>
@@ -72,7 +82,7 @@ const Body = ({ searchQuery }) => {
           </div>
           <div className="flex-cards">
             <div className="card-inner">
-              <h2>Contacts</h2>
+              <h2 className="headf1">Contacts</h2>
               <p className="pees">
                 ** When you call, inform that you have found this car service on
                 the fixauto.md.
@@ -81,24 +91,28 @@ const Body = ({ searchQuery }) => {
                 <img src={call} alt="" />{" "}
                 <a href="tel:+373 68 584 828">+373 68 584 828</a>
               </p>
-              <p className="mail-ph">
+              <a
+                href="https://maps.app.goo.gl/JxVVbSEqxVrQ5w5w9"
+                target="_blank"
+                className="mail-ph bllo"
+              >
                 <img src={elements} alt="" />{" "}
-                <a href="javascript:void(0)">
+                <span>
                   <span className="for-desk">
                     Chisinau municipality, Muncesti str. 255A
                   </span>
                   <span className="for-mbl">
                     mun. Chișinău, str. Muncești 255A
                   </span>{" "}
-                </a>
-              </p>
+                </span>
+              </a>
               <p className="mail-ph">
                 <img src={clock} alt="" /> Mon-Fri: 08.00 — 17.00 <br /> Sat:
                 09.00 — 14.00
               </p>
             </div>
             <div className="card-inner">
-              <h2>Contacts</h2>
+              <h2 className="headf1">Gallery</h2>
               <img className="gallery" src={gallery} alt="" />
             </div>
           </div>
@@ -106,7 +120,7 @@ const Body = ({ searchQuery }) => {
             <div className="inner-data">
               <div className="service-detail">
                 <div className="col-det">
-                  <p>Type of services</p>
+                  <p className="headf1">Type of services</p>
                   <div className="flex-detail">
                     <div className="col-one">
                       <img src={detailing_ico} alt="" />
@@ -274,7 +288,7 @@ const Body = ({ searchQuery }) => {
             <div className="inner-data">
               <div className="service-detail">
                 <div className="col-det w-100">
-                  <p>Map</p>
+                  <p className="headf1">Map</p>
 
                   <p className="get-d">Get directions to this car service.</p>
                   <iframe
@@ -316,7 +330,9 @@ const Body = ({ searchQuery }) => {
         </div>
       </div>
       <div className="mbl-foot mbl-only">
-        <img src={Btn} alt="" />
+        <a href="https://maps.app.goo.gl/JxVVbSEqxVrQ5w5w9" target="_blank">
+          <img src={Btn} alt="" />
+        </a>
         <button>
           <img src={Call} alt="" /> Call this service
         </button>

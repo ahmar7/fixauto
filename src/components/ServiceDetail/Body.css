@@ -31,6 +31,9 @@
   font-size: 16px;
   gap: 5px;
 }
+.rad8 {
+  border-radius: 8px;
+}
 .flex-cards {
   display: flex;
   justify-content: space-between;
@@ -112,7 +115,55 @@
 .ads-ara {
   display: none;
 }
+.headf {
+  color: #1d2126;
+  font-size: 22px !important;
+}
+.headf1 {
+  font-size: 19px !important;
+}
+.avb {
+  background: #fff8bd;
+  border-radius: 4px;
+  padding: 5px 15px 5px 8px;
+}
+.avb img {
+  width: 21px;
+}
+/* 
+
+*/
+/* YourComponent.css */
+
+.show-more {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.show-more img {
+  margin-left: 5px;
+  transition: transform 0.3s;
+}
+
+.show-more img {
+  transform: rotate(0deg);
+}
+
+.expanded ~ .show-more img {
+  transform: rotate(180deg);
+}
+.mbl-foot button {
+  font-family: "Manrope", sans-serif !important;
+}
+/*  */
 @media (max-width: 767px) {
+  .avb {
+    background: #fffbdb;
+  }
   .flex-cards {
     flex-direction: column;
   }
@@ -124,6 +175,16 @@
   .flex-detail {
     flex-direction: column;
   }
+  .lit2 {
+    overflow: hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4; /* Number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  .expanded {
+    -webkit-line-clamp: unset !important;
+  }
+
   .col-det iframe {
     height: 260px;
   }
